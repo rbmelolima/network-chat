@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#chat-container {
+  width: 90%;
+  max-width: 600px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#message-input {
+  width: calc(100% - 110px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+#send-button {
+  width: 100px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Adicione ou modifique os estilos do textarea */
+#message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  resize: vertical;
+  /* Permite que o usuário redimensione verticalmente */
+}
+
+/* Adicione ou modifique estes estilos em styles.css */
+pre {
+  background-color: #f8f8f8;
+  border-left: 3px solid #ddd;
+  padding: 10px;
+  overflow-x: auto;
+  /* Permite rolagem horizontal para código longo */
+  white-space: pre-wrap;
+  /* Quebra linhas longas */
+  word-wrap: break-word;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -2,6 +2,7 @@ const express = require('express');
 const http = require('http');
 const socketIO = require('socket.io');
 
+
 // Configuração do servidor
 const app = express();
 const server = http.createServer(app);
@@ -26,3 +27,5 @@ io.on('connection', (socket) => {
 server.listen(3000, () => {
   console.log('Servidor rodando na porta 3000');
 });
+
+app.use(express.static('public')); // Adicione esta linha
